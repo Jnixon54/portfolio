@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './LandingPage.css';
 
-const LandingPage = () => {
+class LandingPage extends Component {
+  render() {
   return (
-    <div id="landing-container">
+    <div ref="landing" id="landing-container">
       <div>
       </div>
       <div>
@@ -12,7 +13,7 @@ const LandingPage = () => {
       <div id="next-line">
       </div>
     </div>
-  )
+  )}
 }
 
 export default LandingPage;

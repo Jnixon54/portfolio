@@ -1,17 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './Contact.css';
 
-const Contact = () => {
-  return (
-    <div id="contact-container">
-      <div>
+class Contact extends Component {
+  render(){
+    return (
+      <div ref={ container => this.container = container } id="contact-container">
+        <div>
 
-      </div>
-      <div>
+        </div>
+        <div>
 
+        </div>
       </div>
-    </div>
-  )
+    )
+  }
 }
 
 export default Contact;
