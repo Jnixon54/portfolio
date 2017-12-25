@@ -39,12 +39,10 @@
 .header-link span {
   text-align: center;
   display: block;
-  
 }
 
 .header-link, .header-link-text {
   transition: 0.2s;
-
 }
 
 .header-link-text {
@@ -53,5 +51,42 @@
 
 .header-link:hover .header-link-text {
   margin-top: -1em;
-  
+}
+
+#secondary-link-1 {
+  color: #44EDE4;
+}
+
+#secondary-link-2 {
+  color: #45CB85;
+  /* FCF34B Yellow*/ 
+}
+
+#secondary-link-3 {
+  color: #FC7753;
+}
+
+#name-dot {
+  display: inline;
+}
+
+#name-extra {
+  /* visibility: hidden; */
+  display: none;
+}
+
+/* #name-last {
+
+} */
+
+.header-logo, #name-extra {
+  transition: .3s;
+}
+
+.header-logo:hover #name-dot {
+  display: none;
+}
+
+.header-logo:hover #name-extra {
+  display: inline;
 }

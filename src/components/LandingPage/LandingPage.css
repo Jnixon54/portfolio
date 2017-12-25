@@ -1,0 +1,13 @@
+#landing-container {
+  height: calc(100vh - 80px);
+  width: 100%;
+}
+
+#next-line {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 1px;
+  height: 75px;
+  background-color: #22222270;
+}
