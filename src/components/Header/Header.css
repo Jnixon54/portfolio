@@ -1,0 +1,57 @@
+.header-container {
+  display: flex;
+  height: 80px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 40px;
+}
+
+.header-logo a {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.header-links {
+  display: flex;
+  align-items: flex-end;
+  padding-right: 60px;
+  margin-left: auto;
+  /* width: 700px; */
+}
+
+.header-link {
+  margin-left: 120px;
+  text-decoration: none;
+  letter-spacing: 3px;
+  overflow: hidden;
+  /* Must be same size */
+  font-size: 16px; 
+  height: 16px;
+  line-height: 16px;
+  
+}
+
+.header-link span {
+  text-align: center;
+  display: block;
+  
+}
+
+.header-link, .header-link-text {
+  transition: 0.2s;
+
+}
+
+.header-link-text {
+  margin-top: 0;
+}
+
+.header-link:hover .header-link-text {
+  margin-top: -1em;
+  
+}
