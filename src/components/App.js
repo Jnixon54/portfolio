@@ -13,11 +13,20 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      scrollPercent: 0
     };
 
     this.handleScroll = this.handleScroll.bind(this);
+    this.scrollPosition = this.scrollPosition.bind(this);
   }
 
+  componentDidMount() {
+    window.location.hash = '#home';
+    window.addEventListener('scroll', this.scrollPosition);
+
+    // console.log('document.documentElement: ', document.documentElement);
+  }
+  
   handleScroll(target){
     // window.scrollTo(0, DOMelement.offsetTop);
     if (target === 'projects'){
@@ -28,8 +37,24 @@ class App extends Component {
       scrollToComponent(this.contact.container, { duration: 1000, ease: 'inOutQuad' })
     }
   }
+  
+  scrollPosition(){ // Pure Javascript function to monitor scroll postion
+    let winHeight = window.innerHeight;
+
+    let body = document.body;
+    let html = document.documentElement;
+    let docHeight = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+    let value = document.documentElement.scrollTop;
+
+    let max = docHeight - winHeight;
+    let percent = (value / max) * 100;
+    this.setState({scrollPercent: percent});
+
+  }
+
 
   render() {
+    console.log(this.state.scrollPercent);
     return (
       <div className="App">
         <Header handleScroll={this.handleScroll}/>

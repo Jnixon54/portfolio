@@ -10,7 +10,7 @@
 }
 
 .header-logo a {
-  font-size: 40px;
+  font-size: 60px;
   line-height: 40px;
   font-weight: bold;
   letter-spacing: 5px;
@@ -30,9 +30,9 @@
   letter-spacing: 3px;
   overflow: hidden;
   /* Must be same size */
-  font-size: 16px; 
-  height: 16px;
-  line-height: 16px;
+  font-size: 20px; 
+  height: 20px;
+  line-height: 20px;
   
 }
 

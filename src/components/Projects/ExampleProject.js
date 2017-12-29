@@ -4,7 +4,7 @@ import './ExampleProject.css';
 class ExampleProject extends Component {
   render(){
     return (
-      <div ref={ container => this.container = container } id="project-container">
+      <div ref={ container => this.container = container } id="projects">
         <div>
 
         </div>
