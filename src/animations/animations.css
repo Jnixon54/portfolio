@@ -4,7 +4,7 @@
 
 .pop-enter.pop-enter-active {
   bottom: 10px;
-  transition: bottom 1000ms ease; 
+  transition: bottom 400ms ease; 
 }
 
 .pop-exit {
@@ -13,5 +13,5 @@
 
 .pop-exit.pop-exit-active{
   bottom: -100px;
-  transition: bottom 1000ms ease-out; 
+  transition: bottom 400ms ease-out; 
 }
