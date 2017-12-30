@@ -1,0 +1,17 @@
+.pop-enter {
+  bottom: -100px;
+}
+
+.pop-enter.pop-enter-active {
+  bottom: 10px;
+  transition: bottom 1000ms ease; 
+}
+
+.pop-exit {
+  bottom: 10px;
+}
+
+.pop-exit.pop-exit-active{
+  bottom: -100px;
+  transition: bottom 1000ms ease-out; 
+}

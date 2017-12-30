@@ -1,0 +1,29 @@
+.return-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 10px;
+  /* bottom: 10px; */
+  width: 100px;
+  height: 100px;
+}
+
+.return-button {
+  /* position: fixed;
+  right: 25px;
+  bottom: 25px; */
+  height: 70px;
+  width: 70px;
+  background-color: #FCF34B;
+  border-radius: 50%;
+  margin: 5px;
+  transition-duration: .2s;
+
+  /* box-shadow: 0 0px 20px 0px rgba(0,0,0,.2); */
+}
+
+.return-button:hover {
+  height: 80px;
+  width: 80px;
+}

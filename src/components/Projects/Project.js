@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './ExampleProject.css';
+import './Project.css';
 
-class ExampleProject extends Component {
+class Project extends Component {
   render(){
     return (
       <div ref={ container => this.container = container } id="projects">
@@ -16,4 +16,4 @@ class ExampleProject extends Component {
   }
 }
 
-export default ExampleProject;
+export default Project;

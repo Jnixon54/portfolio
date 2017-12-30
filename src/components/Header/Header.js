@@ -5,7 +5,7 @@ import './Header.css';
 class Header extends Component {
   render() {
   return (
-    <div className="header-container" id="home">
+    <div ref={container => this.container = container} className="header-container" id="home">
       <div className="header-logo">
         <Link to="/#home">
         <span>J</span>
