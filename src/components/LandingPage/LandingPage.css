@@ -1,13 +1,34 @@
 #landing {
+  /* height: 100vh; */
+  /* display: flex; */
+  /* justify-content: center; */
   height: calc(100vh - 80px);
-  width: 100%;
+  /* width: 100%; */
 }
 
-#next-line {
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  width: 1px;
-  height: 75px;
-  background-color: #22222270;
+.landing-text {
+  display: inline-block;
+  position: relative;
+  margin-top: 16vh;;
+  /* top: -46px; */
+  color: #131324;
+  /* font-size: 5em; */
+  font-size: 6vw;
+  font-family: 'Zilla Slab Highlight';
 }
+
+#block-1 {
+  font-family: 'Zilla Slab';
+}
+
+#block-2 {
+  display: inline-block;
+  /* width: 546px; */
+
+}
+
+#block-3 {
+  /* width: 546px; */
+  text-align: right;
+}
+

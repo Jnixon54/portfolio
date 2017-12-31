@@ -25,12 +25,17 @@ class App extends Component {
   componentDidMount() {
     window.location.hash = '#home';
     window.addEventListener('scroll', this.scrollPosition);
+
+    
   }
 
   
   handleScroll(target){
+    let body = document.querySelector('body');
+    body.style.backgroundColor = '#44EDE4';
+    console.log(body)
     // window.scrollTo(0, DOMelement.offsetTop);
-    scrollToComponent(this[target].container, { duration: 1000, ease: 'inOutQuad'})
+    // scrollToComponent(this[target].container, { duration: 1000, ease: 'inOutQuad'})
   }
   
   scrollPosition(){ // Pure Javascript function to monitor scroll postion
@@ -48,7 +53,7 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state);
+    console.log(this);
     
     return (
       <div className="App">

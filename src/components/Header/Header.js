@@ -5,15 +5,15 @@ import './Header.css';
 class Header extends Component {
   render() {
   return (
-    <div ref={container => this.container = container} className="header-container" id="home">
-      <div className="header-logo">
+    <div ref={container => this.container = container} className="header-container content-container" id="home">
+      {/* <div className="header-logo">
         <Link to="/#home">
         <span>J</span>
         <span id="name-dot">.</span>
         <span id="name-extra">OE</span>
         <span id="name-last">NIXON</span>
         </Link>
-      </div>
+      </div> */}
       <div className="header-links">
         <Link onClick={() => this.props.handleScroll('projects')} className="header-link" to="#projects">
           <span className="header-link-text">Projects</span>
