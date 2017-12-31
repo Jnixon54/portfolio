@@ -1,0 +1,46 @@
+.scroll-nav-container {
+  position: fixed;
+  right: -60px;
+  top: calc(50% - 200px);
+  width: 50px;
+  height: 300px;
+  background-color: none;
+  overflow: hidden;
+  transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.scroll-nav-container.active {
+  right: 10px;
+}
+
+.nav-range {
+  position: relative;
+  /* top: 50%; */
+  /* transition: top .5s ease; */
+}
+
+.nav-orb-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 35px;
+  width: 35px;
+}
+
+.nav-orb {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: white;
+  border: black 2px solid;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.nav-orb:hover {
+  width: 30px;
+  height: 30px;
+}

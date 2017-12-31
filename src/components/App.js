@@ -9,6 +9,7 @@ import Project from './Projects/Project';
 import Contact from './Contact/Contact';
 import About from './About/About';
 import ReturnButton from './ReturnButton/ReturnButton';
+import ScrollNav from './ScrollNav/ScrollNav';
 
 
 class App extends Component {
@@ -31,11 +32,11 @@ class App extends Component {
 
   
   handleScroll(target){
-    let body = document.querySelector('body');
-    body.style.backgroundColor = '#44EDE4';
-    console.log(body)
+    // let body = document.querySelector('body');
+    // body.style.backgroundColor = '#44EDE4';
+    // console.log(body)
     // window.scrollTo(0, DOMelement.offsetTop);
-    // scrollToComponent(this[target].container, { duration: 1000, ease: 'inOutQuad'})
+    scrollToComponent(this[target].container, { duration: 1000, ease: 'inOutQuad'})
   }
   
   scrollPosition(){ // Pure Javascript function to monitor scroll postion
@@ -63,6 +64,7 @@ class App extends Component {
         <About ref={about => this.about = about} />
         <Contact ref={contact => this.contact = contact}/>
         <ReturnButton handleScroll={this.handleScroll} scrollPercent={this.state.scrollPercent}/>
+        <ScrollNav scrollPercent={this.state.scrollPercent}/>
       </div>
     );
   }
